@@ -6,6 +6,15 @@ class Point:
         self.__x = x
         self.__y = y
 
+    def Move(self, xDelta:int = 0, yDelta:int = 0):
+        self.__x = self.__x + xDelta
+        self.__y = self.__y - yDelta
+
+
+    def Reset(self):
+        self.__x = 0
+        self.__y = 0
+    
     def GetX(self) -> int:
         return self.__x
 
