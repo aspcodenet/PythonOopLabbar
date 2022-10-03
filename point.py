@@ -8,7 +8,7 @@ class Point:
 
     def Move(self, xDelta:int = 0, yDelta:int = 0):
         self.__x = self.__x + xDelta
-        self.__y = self.__y - yDelta
+        self.__y = self.__y + yDelta
 
 
     def Reset(self):
@@ -21,7 +21,7 @@ class Point:
     def GetY(self) -> int:
         return self.__y
 
-    def Add(self, otherPoint):
+    def Add(self, otherPoint:type[Point]):
         self.__x = self.__x + otherPoint.GetX()
         self.__y = self.__y + otherPoint.GetY()
 
